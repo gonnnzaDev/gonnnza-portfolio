@@ -1,0 +1,23 @@
+.tecnologies-container {
+    display: flex;
+    background-color: rgb(131, 131, 131);
+    padding: 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tecnologies-icons {
+
+    
+
+}
+
+.tecnologies-icons svg {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}

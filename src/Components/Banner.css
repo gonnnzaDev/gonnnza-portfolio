@@ -1,0 +1,44 @@
+:root {
+    --primary-color: rgb(167, 58, 197);
+}
+
+
+.container-banner {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.banner-info {
+    margin-left: 20px;
+
+}
+
+.banner-info h1 {
+    font-size: 100px;
+    color: white;
+    animation: blink 1s steps(2) infinite;
+}
+
+@keyframes iluminarLetra {
+
+    0%,
+    100% {
+        color: #ffffff;
+    }
+
+    10% {
+        color: var(--primary-color);
+    }
+
+    20% {
+        color: #ffffff;
+    }
+}
+
+.banner-info h1 span {
+    display: inline-block;
+    animation: iluminarLetra 10s infinite;
+    white-space: pre;
+}
