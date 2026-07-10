@@ -1,8 +1,6 @@
 import './App.css'
-import Information from './Components/Information'
-import AboutMe from './Components/AboutMe'
+import About from './Components/About'
 import Tecnologies from './Components/Tecnologies'
-import SocialMedia from './Components/SocialMedia'
 import Banner from './Components/Banner'
 
 function App() {
@@ -10,10 +8,6 @@ function App() {
   return (
     <>
       <Banner />
-      <AboutMe />
-      <Tecnologies />
-      <Information />
-
 
     </>
   )

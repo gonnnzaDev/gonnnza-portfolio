@@ -1,0 +1,25 @@
+
+@import '../App.css';
+
+.about-container {
+    align-items: center;
+    justify-content: center;
+    border: var(--border);
+    height: 100vh;
+    margin: 30px;
+}
+
+
+.about-info {
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+
+}
+
+.about-info img {
+    width: 250px;
+    height: 250px;
+    border: var(--border);
+
+}
