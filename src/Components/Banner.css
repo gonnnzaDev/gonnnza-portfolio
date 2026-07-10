@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     height: 95vh;
-    background-color: #000;
+    background-color: #060606;
     overflow: hidden;
     padding: 20px;
     box-sizing: border-box;
@@ -33,7 +33,7 @@
     0%, 40%, 100% {
         color: #ffffff;
     }
-    20%, 30% {
+    30% {
         color: var(--primary-color, #ff0055); 
     }
 }
@@ -45,7 +45,7 @@
 
 .banner-info h1 span {
     display: inline-block;
-    animation: iluminarLetra 4s steps(1) infinite;
+    animation: iluminarLetra 10s steps(1) infinite;
     white-space: pre-wrap;
 }
 
