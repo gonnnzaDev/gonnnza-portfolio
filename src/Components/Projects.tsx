@@ -12,7 +12,7 @@ export default function Projects() {
     return (
         <>
             <main className='projects-container'>
-                
+
                 <ProjectArticle
                     name="AppointMee"
                     image={appointmee}
@@ -31,9 +31,16 @@ export default function Projects() {
 
     );
 }
+type ProjectArticleProps = {
+    name: string;
+    image: string;
+    desc: string;
+    colorr: string;
+    tecnologies: string[];
+};
 
 
-function ProjectArticle({ name, image, desc, colorr, tecnologies }) {
+function ProjectArticle({ name, image, desc, colorr, tecnologies }: ProjectArticleProps) {
 
 
     return (
@@ -64,9 +71,11 @@ function ProjectArticle({ name, image, desc, colorr, tecnologies }) {
 
 }
 
+type TecnologyButtonProps = {
+    tecnologies: string[];
+};
 
-
-function TecnologyButton({ tecnologies }) {
+function TecnologyButton({ tecnologies }: TecnologyButtonProps) {
     return (
         <>
             {tecnologies.map((tecnology, index) => (

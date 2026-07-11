@@ -1,7 +1,7 @@
 import Projects from '../Components/Projects'
 import Tools from '../Components/Tools'
 import Navbar from '../Components/Navbar'
-export default function Proyects(lenguaje) {
+export default function Proyects() {
 
     return (
 
