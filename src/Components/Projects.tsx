@@ -1,9 +1,7 @@
 import './Projects.css'
 
 import java from '../assets/svg/java.svg'
-import py from '../assets/svg/py.svg'
 import js from '../assets/svg/js.svg'
-import ts from '../assets/svg/ts.svg'
 
 import appointmee from '../assets/appointmee.png'
 

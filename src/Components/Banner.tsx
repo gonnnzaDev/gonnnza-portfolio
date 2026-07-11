@@ -35,12 +35,3 @@ export default function Banner() {
 
 
 }
-
-function Boton({ texto, link }) {
-    return (
-        <a href={link} className='button-banner'>
-            {texto}
-        </a>
-    );
-
-}
