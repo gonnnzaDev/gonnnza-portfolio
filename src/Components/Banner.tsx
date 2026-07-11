@@ -4,7 +4,7 @@ export default function Banner() {
     const nombre = "gonnnzaDev";
     return (
         <>
-            <div className='container-banner'>
+            <main className='container-banner'>
 
                 <div className='banner-info'>
                     <h1>
@@ -18,21 +18,18 @@ export default function Banner() {
                         ))}</h1>
 
                     <SocialMedia />
-
-               
-                   
                 </div>
 
-                     <div className='buttons-container'>
-                    <Boton texto="About Me" link="https://github.com" />
-                    <Boton texto="Tecnologies" link="#contacto" />
-                    <Boton texto="Proyects" link="#contacto" />
+                <div className='buttons-container'>
+                    <Boton texto="About Me" link="/about-me" />
+                    <Boton texto="Projects" link="/projects" />
+                    <Boton texto="" link="" />
 
-                    </div>
+                </div>
 
 
+            </main>
 
-            </div>
 
         </>
     )

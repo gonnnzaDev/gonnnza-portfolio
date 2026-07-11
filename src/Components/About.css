@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: center;
     border: var(--border);
-    height: 100vh;
-    margin: 30px;
+    height: 96vh;
+    background-color: var(--background-container);
 }
 
 

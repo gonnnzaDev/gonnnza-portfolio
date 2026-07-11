@@ -1,0 +1,46 @@
+@import '../App.css';
+
+.projects-container {
+    display: flex;
+    height: 96vh;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    border: var(--border);
+}
+
+.projects-container footer p {
+    opacity: 0.6;
+}
+
+
+
+.article-container h4 {
+    color: white;
+    margin: 0 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+.article-container {
+    width: 60vw;
+    height: auto;
+    border: var(--border);
+    margin: 20px 20px 0 20px;
+}
+
+.article-container p {
+    margin: 10px;
+}
+
+.article-container img {
+
+    height: 80px;
+    width: 80px;
+
+}
+
+.article-container header {
+    display: flex;
+    align-items: center;
+}

@@ -1,16 +1,22 @@
 import './App.css'
-import About from './Components/About'
-import Tecnologies from './Components/Tecnologies'
-import Banner from './Components/Banner'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './Pages/Home';
+import AboutMe from './Pages/AboutMe';
+import Projects from './Pages/Projects';
+
 
 function App() {
 
   return (
-    <>
-      <Banner />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
 
-    </>
-  )
+    </BrowserRouter>
+  );
 }
 
 export default App

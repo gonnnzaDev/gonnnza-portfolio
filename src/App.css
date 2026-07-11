@@ -1,9 +1,9 @@
 :root {
   --background-main-color: rgb(12, 12, 12);
+  --background-container : #060606;
   --primary-font: monospace;
   --primary-color: rgb(167, 58, 197);
   --border: 2px solid rgb(140, 140, 140);
-
 }
 
 body {

@@ -1,18 +1,7 @@
 @import '../App.css';
 
-.container-banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 95vh;
-    background-color: #060606;
-    overflow: hidden;
-    padding: 20px;
-    box-sizing: border-box;
-}
 
 .banner-info {
-    margin: 0;
     width: 50vw;
     display: flex;
     flex-direction: column;
@@ -112,4 +101,13 @@
         width: 100%;
         max-width: 260px;
     }
+}
+.container-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96vh;
+    background-color: var(--background-container);
+    box-sizing: border-box;
+    border: var(--border);
 }
