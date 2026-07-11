@@ -1,0 +1,82 @@
+@import '../App.css';
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    min-height: 56px;
+    width: 90px;
+    padding: 0 20px;
+    background: rgba(27, 27, 27, 0.868);
+    border: 1px solid var(--primary-color);
+    border-radius: 14px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+.navbar-container:hover {
+    width: min(90vw, 720px);
+    gap: 1240px;
+
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar__list-item {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+
+    min-width: 0;
+}
+
+.navbar__list-item img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.navbar__list-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.navbar__list-item:nth-child(2) a {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.navbar-container:hover .navbar__list-item:first-child a,
+.navbar-container:hover .navbar__list-item:last-child a {
+    opacity: 1;
+
+    pointer-events: auto;
+}   
+
+.navbar__list-item a:hover {
+
+    color: var(--primary-color);
+}

@@ -1,0 +1,43 @@
+@import '../App.css';
+
+h1 {
+    font-size: 40px;
+    font-family: monospace;
+}
+
+
+h3 {
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.tools-container {
+    background-color: var(--background-container);
+    display: flex;
+    flex-direction: column;
+    height: 96vh;
+    width: 30%;
+    border: var(--border);
+    margin: 0 5px 0 0;
+    z-index: 1;
+
+}
+
+.tools-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+.tools-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

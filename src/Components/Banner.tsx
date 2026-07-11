@@ -4,6 +4,7 @@ export default function Banner() {
     const nombre = "gonnnzaDev";
     return (
         <>
+
             <main className='container-banner'>
 
                 <div className='banner-info'>
@@ -20,10 +21,8 @@ export default function Banner() {
                     <SocialMedia />
                 </div>
 
-                <div className='buttons-container'>
-                    <Boton texto="About Me" link="/about-me" />
-                    <Boton texto="Projects" link="/projects" />
-                    <Boton texto="" link="" />
+                <div className='content-container'>
+                    <img src=''></img>
 
                 </div>
 

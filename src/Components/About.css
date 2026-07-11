@@ -7,6 +7,7 @@
     border: var(--border);
     height: 96vh;
     background-color: var(--background-container);
+    
 }
 
 
@@ -21,5 +22,40 @@
     width: 250px;
     height: 250px;
     border: var(--border);
+    margin: 5vh 0;
 
+    z-index: 6;
+
+
+}
+
+.code-line {
+    font-family: monospace;
+    padding: 12px 16px;
+    box-shadow: var(--border);
+    font-size: 20px;
+    color: white;
+    z-index: 6;
+
+}
+
+.code-line code {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+}
+
+.caret {
+    width: 2px;
+    height: 0.8em;
+    background: var(--text-color, #bababa);
+    display: inline-block;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 1 }
 }

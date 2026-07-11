@@ -1,6 +1,7 @@
 .social-media-container {
 
     display: flex;
+    z-index: 5;
 
 }
 

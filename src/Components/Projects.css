@@ -8,12 +8,30 @@
     align-items: center;
     overflow-y: auto;
     border: var(--border);
+    background-color: var(--background-container);
+    z-index: 5;
 }
 
 .projects-container footer p {
     opacity: 0.6;
 }
 
+.tecnologies {
+    margin: 0 20px 0 auto;
+    display: flex;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.378);
+    padding: 12px;
+    border-radius: 15px;
+    
+
+}
+
+.tecnology-icon img {
+    width: 25px;
+    height: 25px;
+
+}
 
 
 .article-container h4 {
@@ -22,6 +40,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
 }
+
 .article-container {
     width: 60vw;
     height: auto;
@@ -33,7 +52,8 @@
     margin: 10px;
 }
 
-.article-container img {
+
+.project-image {
 
     height: 80px;
     width: 80px;
@@ -43,4 +63,5 @@
 .article-container header {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
