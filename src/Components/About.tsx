@@ -16,7 +16,7 @@ today, i strive to build secure, efficient, and well-designed software systems t
 
     /*para que arranque al final porque sino jojo no una paja esperar tatno */
     useEffect(() => {
-        let idx = texto.length / 1.2;
+        let idx = texto.length / 1.1;
         const speed = 42;
 
         const handle = setInterval(() => {
