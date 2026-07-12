@@ -1,5 +1,6 @@
 @import '../App.css';
 
+
 .projects-container {
     display: flex;
     height: 96vh;
@@ -8,36 +9,37 @@
     align-items: center;
     overflow-y: auto;
     border: var(--border);
-    background-color: var(--background-container);
     z-index: 5;
+    border-radius: 10px;
+    
 }
 
 .projects-container footer p {
     opacity: 0.6;
 }
 
+
+
 .tecnologies {
     margin: 0 20px 0 auto;
     display: flex;
-    gap: 8px;
-    background-color: rgba(0, 0, 0, 0.378);
-    padding: 12px;
+    gap: 10px;
     border-radius: 15px;
     
 
 }
 
 .tecnology-icon img {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 
 }
 
 
 .article-container h4 {
     color: white;
-    margin: 0 5%;
-    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    font-family: var(--font-name);
     font-size: 30px;
 }
 
@@ -45,7 +47,15 @@
     width: 60vw;
     height: auto;
     border: var(--border);
-    margin: 20px 20px 0 20px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+
+}
+
+.article-container:hover{
+    background-color: rgba(0, 0, 0, 0.216);
 }
 
 .article-container p {
@@ -57,6 +67,7 @@
 
     height: 80px;
     width: 80px;
+    margin: 0 50px;
 
 }
 

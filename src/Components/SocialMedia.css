@@ -1,7 +1,10 @@
+@import '../App.css';
 .social-media-container {
 
     display: flex;
     z-index: 5;
+    height: auto;
+    border-radius: 10px;
 
 }
 

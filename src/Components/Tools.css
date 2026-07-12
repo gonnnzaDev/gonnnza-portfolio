@@ -2,25 +2,32 @@
 
 h1 {
     font-size: 40px;
-    font-family: monospace;
+    font-family: var(--font-name);
+}
+
+body::before{
+    background-color: rgba(255, 0, 0, 0);
 }
 
 
 h3 {
-    font-size: 30px;
-    font-family: monospace;
+    font-size: 40px;
+    font-family: var(--font-name);
+    margin: 15px 0;
 }
 
 .tools-container {
-    background-color: var(--background-container);
+    border-radius: 10px;
+
     display: flex;
+    justify-content: center;
     flex-direction: column;
     height: 96vh;
     width: 30%;
     border: var(--border);
     margin: 0 5px 0 0;
     z-index: 1;
-
+     
 }
 
 .tools-icons img {
