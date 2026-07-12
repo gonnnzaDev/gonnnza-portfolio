@@ -49,13 +49,16 @@
     border: var(--border);
     margin: 20px;
     border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.216);
+
     overflow: hidden;
     transition: all 0.2s ease;
 
 }
 
 .article-container:hover{
-    background-color: rgba(0, 0, 0, 0.216);
+    background-color: rgba(0, 0, 0, 0.336);
+
 }
 
 .article-container p {
