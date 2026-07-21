@@ -10,6 +10,7 @@ import postgres from '../assets/svg/postgres.svg'
 import maria from '../assets/svg/maria.svg'
 import git from '../assets/svg/git.svg'
 import tux from '../assets/svg/tux.svg'
+import spring from '../assets/svg/spring-svgrepo-com.svg'
 
 
 
@@ -34,6 +35,7 @@ export default function MyTecnologies() {
                     <h3>FrameWorks</h3>
                     <div className='tools-icons'>
                         <img src={react} alt='React' className='tool-icon' />
+                        <img src={spring} alt='Spring' className='tool-icon' />
                     </div>
                 </div>
 
