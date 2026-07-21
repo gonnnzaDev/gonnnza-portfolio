@@ -8,6 +8,7 @@
     height: 96vh;
     background-color: var(--background-container);
     border-radius: 10px;
+    overflow: scroll;
 }
 
 
@@ -58,4 +59,17 @@
     0% { opacity: 1 }
     50% { opacity: 0 }
     100% { opacity: 1 }
+}
+
+@media (max-width: 768px) {
+    .about-container{
+        height: auto;
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+  
 }

@@ -6,24 +6,25 @@
     align-items: center;
     position: fixed;
     left: 50%;
-    bottom: 5%;
+    bottom: 20px;
     transform: translateX(-50%);
     z-index: 1000;
     min-height: 56px;
     width: 90px;
     padding: 0 20px;
-    background: rgba(27, 27, 27, 0.868);
+    background: rgba(5, 5, 5, 0.41);
     border: 1px solid var(--primary-color);
     border-radius: 10px;
     overflow: hidden;
     box-sizing: border-box;
-    transition: all 0.5s ease;
+    transition: width 0.5s ease;
 }
 
 .navbar-container:hover {
     width: min(90vw, 720px);
 
 }
+
 
 .navbar__list {
     display: flex;
@@ -73,7 +74,7 @@
     opacity: 1;
 
     pointer-events: auto;
-}   
+}
 
 .navbar__list-item a:hover {
 

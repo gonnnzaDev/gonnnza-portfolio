@@ -19,6 +19,7 @@ export default function Projects() {
                     desc="An management system developed as the Final Project for the Programming III at the UTN"
                     colorr="#422606"
                     tecnologies={[java, js]}
+                    link='https://github.com/gonnnzaDev/AppointMee'
                 />
 
 
@@ -37,34 +38,38 @@ type ProjectArticleProps = {
     desc: string;
     colorr: string;
     tecnologies: string[];
+    link: string;
 };
 
 
-function ProjectArticle({ name, image, desc, colorr, tecnologies }: ProjectArticleProps) {
+function ProjectArticle({ name, image, desc, colorr, tecnologies, link }: ProjectArticleProps) {
 
 
     return (
 
         <>
-            <article className='article-container'>
-                <header
-                    style={{
-                        background: `linear-gradient(to right, ${colorr}, #111)`
-                    }}
-                >
-                    <img className="project-image" src={image} />
-                    <h4 >{name}</h4>
+            <a href={link}>
 
-                    <div className="tecnologies">
-                        <TecnologyButton tecnologies={tecnologies} />
-                    </div>
+                <article className='article-container'>
+                    <header
+                        style={{
+                            background: `linear-gradient(to right, ${colorr}, #111)`
+                        }}
+                    >
+                        <img className="project-image" src={image} />
+                        <h4 >{name}</h4>
 
-                </header>
-                <main>
-                    <p >{desc}</p>
-                </main>
-            </article>
+                        <div className="tecnologies">
+                            <TecnologyButton tecnologies={tecnologies} />
+                        </div>
 
+                    </header>
+                    <main>
+                        <p >{desc}</p>
+                    </main>
+                </article>
+
+            </a>
         </>
 
     );

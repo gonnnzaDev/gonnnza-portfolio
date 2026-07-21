@@ -1,9 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap');
 
 :root {
 
-  --font-name : "Geist Pixel", sans-serif;
+  --font-name: "Geist Pixel", sans-serif;
   --background-main-color: rgba(12, 12, 12, 0.423);
   --background-container: #0606061b;
   --primary-font: monospace;
@@ -22,7 +21,14 @@ body {
   backdrop-filter: blur(5px);
 }
 
+a {
+  text-decoration: none;
+}
 
+html,
+body {
+  overflow-x: hidden;
+}
 
 #root {
   position: relative;
