@@ -6,7 +6,7 @@
     align-items: center;
     position: fixed;
     left: 50%;
-    bottom: 20px;
+    bottom: 30px;
     transform: translateX(-50%);
     z-index: 1000;
     min-height: 56px;

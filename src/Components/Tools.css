@@ -18,20 +18,18 @@ h3 {
 
 .tools-container {
     border-radius: 10px;
-
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-self: center;
     flex-direction: column;
     height: 96vh;
-    width: 30%;
+    width: 36%;
     border: var(--border);
     margin: 0 5px 0 0;
     z-index: 1;
     overflow: scroll;
 
 }
-
-
 
 .tools-icons img {
     width: 50px;
@@ -54,7 +52,9 @@ h3 {
 
 
 @media (max-width: 768px) {
-    .tools-container {
+    
+    .tools-container{
+        margin: 0;
         width: 100%;
     }
 

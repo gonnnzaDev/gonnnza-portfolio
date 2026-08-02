@@ -1,8 +1,10 @@
 import Projects from '../Components/Projects'
 import Tools from '../Components/Tools'
 import Navbar from '../Components/Navbar'
-import './Projects.css'
+import './ProjectsPage.css'
 export default function Proyects() {
+
+
 
     return (
 
@@ -12,7 +14,10 @@ export default function Proyects() {
             <main>
 
                 <Tools />
-                <Projects />
+                <div className='mobile'>
+
+                    <Projects />
+                </div>
 
 
             </main>

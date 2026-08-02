@@ -2,17 +2,25 @@ import './Projects.css'
 
 import java from '../assets/svg/java.svg'
 import js from '../assets/svg/js.svg'
+import ts from '../assets/svg/ts.svg'
 
 import appointmee from '../assets/appointmee.png'
+import mlc from '../assets/mlc.png'
+import { Link } from 'react-router-dom'
 
 export default function Projects() {
 
 
-
     return (
         <>
-            <main className='projects-container'>
 
+            <main className='projects-container'>
+                <div className='tools-button'>
+                    <Link to="/tecnologies" className="button-style">
+                        Tools
+
+                    </Link>
+                </div>
                 <ProjectArticle
                     name="AppointMee"
                     image={appointmee}
@@ -20,6 +28,15 @@ export default function Projects() {
                     colorr="#422606"
                     tecnologies={[java, js]}
                     link='https://github.com/gonnnzaDev/AppointMee'
+                />
+
+                <ProjectArticle
+                    name="MLC Padel Store"
+                    image={mlc}
+                    desc="Ecommerce specializing in padel products"
+                    colorr="#16891f"
+                    tecnologies={[java, ts]}
+                    link='https://mlcpadelstore.com.ar'
                 />
 
 
@@ -91,3 +108,4 @@ function TecnologyButton({ tecnologies }: TecnologyButtonProps) {
         </>
     );
 }
+

@@ -11,15 +11,26 @@ import maria from '../assets/svg/maria.svg'
 import git from '../assets/svg/git.svg'
 import tux from '../assets/svg/tux.svg'
 import spring from '../assets/svg/spring-svgrepo-com.svg'
+import mongo from '../assets/svg/mongo.svg'
+import { Link } from 'react-router-dom'
 
 
 
-export default function MyTecnologies() {
+export default function Tools() {
+
 
     return (
 
         <>
+
             <section className='tools-container'>
+                <div className='info-buttons'>
+                    <Link to="/projects" className="button-style">
+                        My Projects
+                    </Link>
+
+                </div>
+
 
                 <div className='tools-section'>
                     <h3>Lengs</h3>
@@ -45,6 +56,7 @@ export default function MyTecnologies() {
                         <img src={mysql} alt='MySQL' className='tool-icon' />
                         <img src={postgres} alt='Postgres' className='tool-icon' />
                         <img src={maria} alt='MariaDB' className='tool-icon' />
+                        <img src={mongo} alt='MongoDB' className='tool-icon' />
                     </div>
                 </div>
 

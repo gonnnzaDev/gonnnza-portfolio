@@ -4,9 +4,12 @@ main {
 
 @media (max-width: 768px) {
     main {
-        flex-direction: column-reverse;
         gap: 10px;
+    }
+    .mobile {
+        display: none;
     }
 
 }
+
 

@@ -10,7 +10,7 @@ export default function Navbar() {
             <nav className='navbar-container'>
                 <ul className='navbar__list'>
                     <li className='navbar__list-item'>
-                        <Link to="/projects">
+                        <Link to="/tecnologies">
                             <svg fill="#ffffff" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="8,4 8,5 9,5 9,6 16,6 16,7 17,7 17,8 19,8 19,5 18,5 18,4 11,4 11,3 10,3 10,2 3,2 3,3 2,3 2,15 4,15 4,5 5,5 5,4 "></polygon> <path d="M21,11v-1h-6V9h-1V8H7v1H6v12h1v1h14v-1h1V11H21z M20,19h-1v1H9v-1H8v-8h1v-1h3v1h1v1h6v1h1V19z"></path> </g> </g></svg>
                         </Link>
 
