@@ -85,6 +85,18 @@ h3 {
   padding: 0 20px;
 }
 
+.tools-button .button-style,
+.info-buttons .button-style {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .tools-button .button-style,
+  .info-buttons .button-style {
+    display: inline-block;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
