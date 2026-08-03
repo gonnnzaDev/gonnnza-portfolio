@@ -61,8 +61,8 @@ function ProjectArticle({
 }: ProjectArticleProps) {
   return (
     <>
-        <article className="article-container">
-      <a href={link}>
+      <article className="article-container">
+        <a href={link}>
           <header
             style={{
               background: `linear-gradient(to right, ${colorr}, #111)`,
@@ -78,8 +78,8 @@ function ProjectArticle({
           <main>
             <p>{desc}</p>
           </main>
-      </a>
-        </article>
+        </a>
+      </article>
     </>
   );
 }
