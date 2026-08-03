@@ -1,111 +1,101 @@
-import './Projects.css'
+import "./Projects.css";
 
-import java from '../assets/svg/java.svg'
-import js from '../assets/svg/js.svg'
-import ts from '../assets/svg/ts.svg'
+import java from "../assets/svg/java.svg";
+import js from "../assets/svg/js.svg";
+import ts from "../assets/svg/ts.svg";
 
-import appointmee from '../assets/appointmee.png'
-import mlc from '../assets/mlc.png'
-import { Link } from 'react-router-dom'
+import appointmee from "../assets/appointmee.png";
+import mlc from "../assets/mlc.png";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
+  return (
+    <>
+      <main className="projects-container">
+        <div className="tools-button">
+          <Link to="/tecnologies" className="button-style">
+            Tools
+          </Link>
+        </div>
+        <ProjectArticle
+          name="AppointMee"
+          image={appointmee}
+          desc="An management system developed as the Final Project for the Programming III at the UTN"
+          colorr="#422606"
+          tecnologies={[java, js]}
+          link="https://github.com/gonnnzaDev/AppointMee"
+        />
 
+        <ProjectArticle
+          name="MLC Padel Store"
+          image={mlc}
+          desc="Ecommerce specializing in padel products"
+          colorr="#16891f"
+          tecnologies={[java, ts]}
+          link="https://mlcpadelstore.com.ar"
+        />
 
-    return (
-        <>
-
-            <main className='projects-container'>
-                <div className='tools-button'>
-                    <Link to="/tecnologies" className="button-style">
-                        Tools
-
-                    </Link>
-                </div>
-                <ProjectArticle
-                    name="AppointMee"
-                    image={appointmee}
-                    desc="An management system developed as the Final Project for the Programming III at the UTN"
-                    colorr="#422606"
-                    tecnologies={[java, js]}
-                    link='https://github.com/gonnnzaDev/AppointMee'
-                />
-
-                <ProjectArticle
-                    name="MLC Padel Store"
-                    image={mlc}
-                    desc="Ecommerce specializing in padel products"
-                    colorr="#16891f"
-                    tecnologies={[java, ts]}
-                    link='https://mlcpadelstore.com.ar'
-                />
-
-
-                <footer>
-                    <p>that's all for now :3 </p>
-                </footer>
-            </main>
-
-        </>
-
-    );
+        <footer>
+          <p>that's all for now :3 </p>
+        </footer>
+      </main>
+    </>
+  );
 }
 type ProjectArticleProps = {
-    name: string;
-    image: string;
-    desc: string;
-    colorr: string;
-    tecnologies: string[];
-    link: string;
+  name: string;
+  image: string;
+  desc: string;
+  colorr: string;
+  tecnologies: string[];
+  link: string;
 };
 
+function ProjectArticle({
+  name,
+  image,
+  desc,
+  colorr,
+  tecnologies,
+  link,
+}: ProjectArticleProps) {
+  return (
+    <>
+        <article className="article-container">
+      <a href={link}>
+          <header
+            style={{
+              background: `linear-gradient(to right, ${colorr}, #111)`,
+            }}
+          >
+            <img className="project-image" src={image} />
+            <h4>{name}</h4>
 
-function ProjectArticle({ name, image, desc, colorr, tecnologies, link }: ProjectArticleProps) {
-
-
-    return (
-
-        <>
-            <a href={link}>
-
-                <article className='article-container'>
-                    <header
-                        style={{
-                            background: `linear-gradient(to right, ${colorr}, #111)`
-                        }}
-                    >
-                        <img className="project-image" src={image} />
-                        <h4 >{name}</h4>
-
-                        <div className="tecnologies">
-                            <TecnologyButton tecnologies={tecnologies} />
-                        </div>
-
-                    </header>
-                    <main>
-                        <p >{desc}</p>
-                    </main>
-                </article>
-
-            </a>
-        </>
-
-    );
-
+            <div className="tecnologies">
+              <TecnologyButton tecnologies={tecnologies} />
+            </div>
+          </header>
+          <main>
+            <p>{desc}</p>
+          </main>
+      </a>
+        </article>
+    </>
+  );
 }
 
 type TecnologyButtonProps = {
-    tecnologies: string[];
+  tecnologies: string[];
 };
 
 function TecnologyButton({ tecnologies }: TecnologyButtonProps) {
-    return (
-        <>
-            {tecnologies.map((tecnology, index) => (
-                <article key={index} className="tecnology-icon">
-                    <img src={tecnology} alt="" />
-                </article>
-            ))}
-        </>
-    );
+  return (
+    <>
+      {tecnologies.map((tecnology, index) => (
+        <article key={index} className="tecnology-icon">
+          <img src={tecnology} alt="" />
+        </article>
+      ))}
+    </>
+  );
 }
-
